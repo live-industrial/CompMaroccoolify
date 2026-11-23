@@ -1,16 +1,21 @@
+# Dependencies
 node_modules/
-database/*.sqlite*
-backups/*.sqlite
+
+# Secrets
+.env
+.jwt-secret
+
+# Local data and backups
+data/
+backups/
 uploads/*
 !uploads/.gitkeep
-.env
-.jwt-secret
- .env .jwt-secret node_modules/ backups/ database/ data/ uploads/
 
-.env
-.jwt-secret
-node_modules/
-backups/
-database/
-data/
-uploads/
+# Database files - keep SQL schema
+database/*.sqlite
+database/*.sqlite3
+database/*.db
+
+# Logs
+*.log
+npm-debug.log*
